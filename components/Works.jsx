@@ -1,17 +1,208 @@
-import React from 'react'
+import React from "react";
 
 export default function Works() {
   return (
-   <section className='min-h-screen'>
+    <>
+    <section className="min-h-screen max-w-9xl mx-auto">
+      <div className=" max-w-7xl  mx-auto mt-24 ">
+        <h1 className="text-8xl font-bold">WHAT I DO /</h1>
+      </div>
 
-    <div className='border max-w-7xl m-auto pt-40 text-8xl font-bold h-12'>
-        WHAT I DO /
-    </div>
+      <div className=" max-w-7xl  mx-auto mt-24 grid grid-cols-6 gap-4 ">
+        <div></div>
+        <div></div>
+        <div></div>
 
-    <div className='max-w-7xl m-auto border pt-60 mt-30'>
-        services
-    </div>
+        <div>
+          <h1 className="font-light">(SERVICES)</h1>
+        </div>
 
-   </section>
-  )
+        <div className="w-120 text-xl">
+          <p>
+            I specialize in building full-stack web applications that are
+            fast,reliable,and user-friendly.With a solid foundation in both
+            frontend and backend technologies,I help bring ideas to life whether
+            it's for a business, a startup,or a product team.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+  
+    <section className="relative min-h-screen max-w-348 mx-auto  -mt-96 text-neutral-200 px-6 md:px-16 py-20">
+      {/* Top divider */}
+      <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* LEFT – Section Number */}
+        <div className="flex items-start">
+          <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            (01)
+          </span>
+        </div>
+
+        {/* RIGHT – Content */}
+        <div className="max-w-2xl  ">
+          {/* Title */}
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+            Full-Stack Development
+          </h2>
+
+          {/* Description */}
+          <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            From frontend interactions to backend APIs, I build complete web
+            solutions. I work with modern stacks to deliver apps that are
+            scalable, maintainable, and ready for real-world users.
+          </p>
+
+          {/* List */}
+          <div className="mt-10 space-y-6">
+            {/* Item 01 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">01</span>
+              <span className="text-lg md:text-xl font-medium  text-neutral-100">
+                React, Node.js, Express.js
+              </span>
+            </div>
+
+            {/* Item 02 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">02</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                REST APIs, Firebase, Docker
+              </span>
+            </div>
+
+            {/* Item 03 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">03</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                Git, GitHub, Postman
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20">
+      {/* Top divider */}
+      <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* LEFT – Section Number */}
+        <div className="flex items-start">
+          <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            (02)
+          </span>
+        </div>
+
+        {/* RIGHT – Content */}
+        <div className="max-w-2xl  ">
+          {/* Title */}
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+            Full-Stack Development
+          </h2>
+
+          {/* Description */}
+          <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            From frontend interactions to backend APIs, I build complete web
+            solutions. I work with modern stacks to deliver apps that are
+            scalable, maintainable, and ready for real-world users.
+          </p>
+
+          {/* List */}
+          <div className="mt-10 space-y-6">
+            {/* Item 01 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">01</span>
+              <span className="text-lg md:text-xl font-medium  text-neutral-100">
+                React, Node.js, Express.js
+              </span>
+            </div>
+
+            {/* Item 02 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">02</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                REST APIs, Firebase, Docker
+              </span>
+            </div>
+
+            {/* Item 03 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">03</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                Git, GitHub, Postman
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20">
+      {/* Top divider */}
+      <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* LEFT – Section Number */}
+        <div className="flex items-start">
+          <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            (03)
+          </span>
+        </div>
+
+        {/* RIGHT – Content */}
+        <div className="max-w-2xl  ">
+          {/* Title */}
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+            Full-Stack Development
+          </h2>
+
+          {/* Description */}
+          <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            From frontend interactions to backend APIs, I build complete web
+            solutions. I work with modern stacks to deliver apps that are
+            scalable, maintainable, and ready for real-world users.
+          </p>
+
+          {/* List */}
+          <div className="mt-10 space-y-6">
+            {/* Item 01 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">01</span>
+              <span className="text-lg md:text-xl font-medium  text-neutral-100">
+                React, Node.js, Express.js
+              </span>
+            </div>
+
+            {/* Item 02 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">02</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                REST APIs, Firebase, Docker
+              </span>
+            </div>
+
+            {/* Item 03 */}
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <span className="text-neutral-500 text-sm">03</span>
+              <span className="text-lg md:text-xl font-medium text-neutral-100">
+                Git, GitHub, Postman
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    </>
+  );
 }
