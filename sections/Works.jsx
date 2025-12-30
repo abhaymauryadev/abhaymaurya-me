@@ -134,7 +134,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">01</span>
               <span className="text-lg md:text-xl font-medium  text-neutral-100">
-                React, Node.js, Express.js
+                React, Node.js, Express.js, Next.js
               </span>
             </div>
 
@@ -176,14 +176,14 @@ export default function Works() {
         <div className="max-w-2xl  ">
           {/* Title */}
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
-            Full-Stack Development
+            UX/UI Designer
           </h2>
 
           {/* Description */}
           <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
-            From frontend interactions to backend APIs, I build complete web
-            solutions. I work with modern stacks to deliver apps that are
-            scalable, maintainable, and ready for real-world users.
+            From wireframes to polished interfaces, I craft experiences that feel
+            intuitive and engaging. I work with modern design systems to deliver
+          products that are user‑centered, visually striking, and ready for real‑world use.
           </p>
 
           {/* List */}
@@ -192,7 +192,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">01</span>
               <span className="text-lg md:text-xl font-medium  text-neutral-100">
-                React, Node.js, Express.js
+                Figma, FiJam, Color Theory, Typography.
               </span>
             </div>
 
@@ -200,7 +200,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">02</span>
               <span className="text-lg md:text-xl font-medium text-neutral-100">
-                REST APIs, Firebase, Docker
+                User Research, Wireframing, Prototyping.
               </span>
             </div>
 
@@ -208,7 +208,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">03</span>
               <span className="text-lg md:text-xl font-medium text-neutral-100">
-                Git, GitHub, Postman
+                Problem Solving, Communication, Collaboration.
               </span>
             </div>
           </div>
@@ -233,14 +233,14 @@ export default function Works() {
         <div className="max-w-2xl  ">
           {/* Title */}
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
-            Full-Stack Development
+            DevOps Engineer
           </h2>
 
           {/* Description */}
           <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
-            From frontend interactions to backend APIs, I build complete web
-            solutions. I work with modern stacks to deliver apps that are
-            scalable, maintainable, and ready for real-world users.
+            From infrastructure automation to continuous delivery, I streamline the
+            software lifecycle. I work with modern DevOps practices to ensure systems
+            are scalable, resilient, and ready for real-world demands..
           </p>
 
           {/* List */}
@@ -249,7 +249,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">01</span>
               <span className="text-lg md:text-xl font-medium  text-neutral-100">
-                React, Node.js, Express.js
+                 Linux, Bash, Shell Scripting
               </span>
             </div>
 
@@ -257,7 +257,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">02</span>
               <span className="text-lg md:text-xl font-medium text-neutral-100">
-                REST APIs, Firebase, Docker
+                  CI/CD Pipelines, Jenkins, GitHub Actions
               </span>
             </div>
 
@@ -265,7 +265,7 @@ export default function Works() {
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <span className="text-neutral-500 text-sm">03</span>
               <span className="text-lg md:text-xl font-medium text-neutral-100">
-                Git, GitHub, Postman
+                 Networking, Security, Monitoring
               </span>
             </div>
           </div>

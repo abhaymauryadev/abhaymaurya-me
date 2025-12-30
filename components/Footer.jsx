@@ -9,31 +9,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
 
-   const Dock = useRef(null);
+  //  const Dock = useRef(null);
    
-  useEffect(() => {
-    gsap.fromTo(
-      Dock.current,
-      {
-        opacity: 0,
-        y: 80,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.1,
-        scrollTrigger: {
-          trigger: Dock.current,
-          start: "top 80%",
-          end: "bottom 30%",
-          markers:false,
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-  }, [])
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     Dock.current,
+  //     {
+  //       opacity: 0,
+  //       y: 80,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 0.1,
+  //       scrollTrigger: {
+  //         trigger: Dock.current,
+  //         start: "top 80%",
+  //         end: "bottom 30%",
+  //         markers:false,
+  //         toggleActions: "play none none reverse"
+  //       }
+  //     }
+  //   );
+  // }, [])
   return (
-    <footer ref={Dock} className="bg-black text-neutral-400 px-6 md:px-16 pt-24 pb-10">
+    <footer  className="bg-black text-neutral-400 px-6 md:px-16 pt-24 pb-10">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* TOP */}
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul className="flex flex-wrap gap-6 text-sm">
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/abhaymauryadev"
                   target="_blank"
                   className="hover:text-neutral-200 transition-colors"
                 >
@@ -59,7 +59,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/abhaymauryawebdeveloper/"
                   target="_blank"
                   className="hover:text-neutral-200 transition-colors"
                 >
@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/theabhaywebdev"
                   target="_blank"
                   className="hover:text-neutral-200 transition-colors"
                 >
@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:youremail@example.com"
+                  href="mailto:theabhaywebdev@gmail.com"
                   className="hover:text-neutral-200 transition-colors"
                 >
                   Email
