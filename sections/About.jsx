@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-   <section className="min-h-screen  text-neutral-200 px-6 md:px-16 py-28">
+   <section id="about" className="min-h-screen  text-neutral-200 px-6 md:px-16 py-28">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         
         {/* LEFT IMAGE */}
         <div className="w-full">
-          <div className="relative w-full h-225 rounded-2xl overflow-hidden">
+          <div className="relative w-full  h-225 rounded-2xl overflow-hidden">
             <Image
-              src="/about.jpg"
+              src="/videos/about.jpg"
               alt="About me image"
               fill
               className="object-cover"

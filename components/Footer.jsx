@@ -1,8 +1,39 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Footer() {
+
+   const Dock = useRef(null);
+   
+  useEffect(() => {
+    gsap.fromTo(
+      Dock.current,
+      {
+        opacity: 0,
+        y: 80,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.1,
+        scrollTrigger: {
+          trigger: Dock.current,
+          start: "top 80%",
+          end: "bottom 30%",
+          markers:false,
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+  }, [])
   return (
-    <footer className="bg-black text-neutral-400 px-6 md:px-16 pt-24 pb-10">
+    <footer ref={Dock} className="bg-black text-neutral-400 px-6 md:px-16 pt-24 pb-10">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* TOP */}

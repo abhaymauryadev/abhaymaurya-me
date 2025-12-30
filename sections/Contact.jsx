@@ -1,6 +1,49 @@
-export default function Contact() {
+"use client";
+
+import {useState} from "react";
+
+
+export default function Contact() { 
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  console.log(form.message);
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setStatus("Message sent successfully.");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      setStatus("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <section className="min-h-screen bg-black text-neutral-200 px-6 md:px-16 py-24">
+    <section id="contact" className="min-h-screen bg-black text-neutral-200 px-6 md:px-16 py-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         
         {/* LEFT CONTENT */}
@@ -23,7 +66,7 @@ export default function Contact() {
         </div>
 
         {/* RIGHT FORM */}
-        <form className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8">
           
           {/* Name */}
           <div>
@@ -32,6 +75,9 @@ export default function Contact() {
             </label>
             <input
               type="text"
+              value={form.name}
+              onChange={handleChange}
+              name="name"
               placeholder="Your name"
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors"
             />
@@ -44,6 +90,9 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              value={form.email}
+              onChange={handleChange}
+              name="email"
               placeholder="you@example.com"
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors"
             />
@@ -56,17 +105,22 @@ export default function Contact() {
             </label>
             <textarea
               rows="4"
+              value={form.message}
+              onChange={handleChange}
+              name="message"
               placeholder="Tell me about your idea..."
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors resize-none"
             />
+             
           </div>
 
           {/* Submit */}
           <button
             type="submit"
+            disabled={loading}
             className="inline-flex items-center gap-2 text-sm text-neutral-200 border border-neutral-700 px-6 py-3 rounded-full hover:border-neutral-300 transition-colors"
           >
-            Send message →
+            {loading ? "Sending..." : "Send message"}
           </button>
         </form>
 

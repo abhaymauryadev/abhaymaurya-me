@@ -14,7 +14,7 @@ import Contact from "@/sections/Contact";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <Works />
       <Projects data={[

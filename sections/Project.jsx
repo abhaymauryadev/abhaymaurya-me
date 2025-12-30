@@ -80,6 +80,8 @@ export default function Projects({ direction = "vertical", data }) {
       </div>
 
     </div>
+
+    
     </section>
 
     <section ref={sectionRef} className="relative h-screen overflow-hidden">

@@ -1,9 +1,80 @@
-import React from "react";
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Works() {
+
+  const card1Ref = useRef(null);
+  const card2Ref = useRef(null);
+  const card3Ref = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Card 1 animation
+      gsap.fromTo(card1Ref.current, 
+        { y: 200, opacity: 0,},
+        {
+          x: 0,
+          opacity: 1,
+          rotationY: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card1Ref.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1,
+          }
+        }
+      );
+
+      // Card 2 animation - stacks on top
+      gsap.fromTo(card2Ref.current, 
+        { y: 200, opacity: 0},
+        {
+          x: 0,
+          opacity: 1,
+          rotationY: 0,
+          y: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card2Ref.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1,
+          }
+        }
+      );
+
+      // Card 3 animation - stacks on top
+      gsap.fromTo(card3Ref.current, 
+        { y: 200, opacity: 0,},
+        {
+          x: 0,
+          opacity: 1,
+          rotationY: 0,
+          y: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card3Ref.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1,
+          }
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
-    <section className="min-h-screen max-w-9xl mx-auto">
+    <section id="work"  className="min-h-screen max-w-9xl mx-auto">
       <div className=" max-w-7xl  mx-auto mt-24 ">
         <h1 className="text-8xl font-bold">WHAT I DO /</h1>
       </div>
@@ -31,7 +102,7 @@ export default function Works() {
 
 
   
-    <section className="relative min-h-screen max-w-348 mx-auto  -mt-96 text-neutral-200 px-6 md:px-16 py-20">
+    <section className="relative min-h-screen max-w-348 mx-auto  -mt-96 text-neutral-200 px-6 md:px-16 py-20" ref={card1Ref}>
       {/* Top divider */}
       <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
 
@@ -89,7 +160,7 @@ export default function Works() {
       
     </section>
 
-     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20">
+     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20" ref={card2Ref}>
       {/* Top divider */}
       <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
 
@@ -146,7 +217,7 @@ export default function Works() {
 
       
     </section>
-     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20">
+     <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20" ref={card3Ref}>
       {/* Top divider */}
       <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
 
