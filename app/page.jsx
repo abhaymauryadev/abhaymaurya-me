@@ -1,5 +1,5 @@
 
-import Image from "next/image";
+// import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -10,10 +10,12 @@ import Projects from "@/sections/Project";
 import Skill from "@/sections/Skills";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
+import Loading from "@/app/loading";
 
 export default function Home() {
   return (
     <>
+      <Loading />
       <Navbar />
       <Hero />
       <Works />

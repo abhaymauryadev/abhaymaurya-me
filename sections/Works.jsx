@@ -104,177 +104,148 @@ export default function Works() {
 
 
 
-      <section className="relative min-h-screen max-w-348 mx-auto  -mt-96 text-neutral-200 px-6 md:px-16 py-20" ref={card1Ref}>
+      <section
+        className="relative min-h-screen max-w-full mx-auto px-6 sm:px-8 md:px-16 py-16 text-neutral-200"
+        ref={card1Ref}
+      >
         {/* Top divider */}
-        <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+        <div className="absolute top-0 left-0 w-full h-px bg-neutral-800" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* LEFT – Section Number */}
           <div className="flex items-start">
-            <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            <span className="text-3xl sm:text-4xl md:text-6xl font-light text-neutral-300">
               (01)
             </span>
           </div>
 
           {/* RIGHT – Content */}
-          <div className="max-w-2xl  ">
-            {/* Title */}
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+          <div className="max-w-xl">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-neutral-100">
               Full-Stack Development
             </h2>
-
-            {/* Description */}
-            <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            <p className="mt-4 text-neutral-400 leading-relaxed text-sm sm:text-base md:text-lg">
               From frontend interactions to backend APIs, I build complete web
               solutions. I work with modern stacks to deliver apps that are
               scalable, maintainable, and ready for real-world users.
             </p>
 
-            {/* List */}
-            <div className="mt-10 space-y-6">
-              {/* Item 01 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+            <div className="mt-8 space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">01</span>
-                <span className="text-lg md:text-xl font-medium  text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   React, Node.js, Express.js, Next.js
                 </span>
               </div>
-
-              {/* Item 02 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">02</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   REST APIs, Firebase, Docker
                 </span>
               </div>
-
-              {/* Item 03 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">03</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   Git, GitHub, Postman
                 </span>
               </div>
             </div>
           </div>
         </div>
-
-
       </section>
 
-      <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20" ref={card2Ref}>
-        {/* Top divider */}
-        <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+      <section
+        className="relative min-h-screen max-w-full mx-auto px-6 sm:px-8 md:px-16 py-16 text-neutral-200"
+        ref={card2Ref}
+      >
+        <div className="absolute top-0 left-0 w-full h-px bg-neutral-800" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* LEFT – Section Number */}
           <div className="flex items-start">
-            <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            <span className="text-3xl sm:text-4xl md:text-6xl font-light text-neutral-300">
               (02)
             </span>
           </div>
 
-          {/* RIGHT – Content */}
-          <div className="max-w-2xl  ">
-            {/* Title */}
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+          <div className="max-w-xl">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-neutral-100">
               UX/UI Designer
             </h2>
-
-            {/* Description */}
-            <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            <p className="mt-4 text-neutral-400 leading-relaxed text-sm sm:text-base md:text-lg">
               From wireframes to polished interfaces, I craft experiences that feel
               intuitive and engaging. I work with modern design systems to deliver
               products that are user‑centered, visually striking, and ready for real‑world use.
             </p>
 
-            {/* List */}
-            <div className="mt-10 space-y-6">
-              {/* Item 01 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+            <div className="mt-8 space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">01</span>
-                <span className="text-lg md:text-xl font-medium  text-neutral-100">
-                  Figma, FiJam, Color Theory, Typography.
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
+                  Figma, FiJam, Color Theory, Typography
                 </span>
               </div>
-
-              {/* Item 02 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">02</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
-                  User Research, Wireframing, Prototyping.
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
+                  User Research, Wireframing, Prototyping
                 </span>
               </div>
-
-              {/* Item 03 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">03</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
-                  Problem Solving, Communication, Collaboration.
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
+                  Problem Solving, Communication, Collaboration
                 </span>
               </div>
             </div>
           </div>
         </div>
-
-
       </section>
-      <section className="relative min-h-screen max-w-348 mx-auto   -mt-44  text-neutral-200 px-6 md:px-16 py-20" ref={card3Ref}>
-        {/* Top divider */}
-        <div className="absolute top-0 left-0 w-full -pt-12 h-px bg-neutral-800" />
+
+      <section
+        className="relative min-h-screen max-w-full mx-auto px-6 sm:px-8 md:px-16 py-16 text-neutral-200"
+        ref={card3Ref}
+      >
+        <div className="absolute top-0 left-0 w-full h-px bg-neutral-800" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* LEFT – Section Number */}
           <div className="flex items-start">
-            <span className="text-5xl md:text-6xl font-light text-neutral-300">
+            <span className="text-3xl sm:text-4xl md:text-6xl font-light text-neutral-300">
               (03)
             </span>
           </div>
 
-          {/* RIGHT – Content */}
-          <div className="max-w-2xl  ">
-            {/* Title */}
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-100">
+          <div className="max-w-xl">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-neutral-100">
               DevOps Engineer
             </h2>
-
-            {/* Description */}
-            <p className="mt-6 text-neutral-400 leading-relaxed text-base md:text-lg">
+            <p className="mt-4 text-neutral-400 leading-relaxed text-sm sm:text-base md:text-lg">
               From infrastructure automation to continuous delivery, I streamline the
               software lifecycle. I work with modern DevOps practices to ensure systems
-              are scalable, resilient, and ready for real-world demands..
+              are scalable, resilient, and ready for real-world demands.
             </p>
 
-            {/* List */}
-            <div className="mt-10 space-y-6">
-              {/* Item 01 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+            <div className="mt-8 space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">01</span>
-                <span className="text-lg md:text-xl font-medium  text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   Linux, Bash, Shell Scripting
                 </span>
               </div>
-
-              {/* Item 02 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">02</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   CI/CD Pipelines, Jenkins, GitHub Actions
                 </span>
               </div>
-
-              {/* Item 03 */}
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-neutral-800 pb-4">
                 <span className="text-neutral-500 text-sm">03</span>
-                <span className="text-lg md:text-xl font-medium text-neutral-100">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-neutral-100">
                   Networking, Security, Monitoring
                 </span>
               </div>
             </div>
           </div>
         </div>
-
-
       </section>
     </>
   );
