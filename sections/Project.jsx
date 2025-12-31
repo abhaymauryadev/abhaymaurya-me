@@ -57,27 +57,25 @@ export default function Projects({ direction = "vertical", data }) {
     <section className='min-h-screen max-w-9xl mx-auto '>
      <div className="min-h-screen max-w-9xl mx-auto">
       <div className=" max-w-7xl  mx-auto mt-24 ">
-        <h1 className="text-8xl font-bold tracking-tighter">SELECTED WORKS /</h1>
+        <h1 className="lg:text-8xl text-6xl font-bold tracking-tighter">SELECTED WORKS /</h1>
       </div>
 
-      <div className=" max-w-7xl  mx-auto mt-24 grid grid-cols-6 gap-4 ">
-        <div></div>
-        <div></div>
-        <div></div>
+     <div className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-6 gap-6 px-4">
+          {/* Left side spacing (hidden on mobile, visible on desktop) */}
+          <div className="hidden md:block md:col-span-3"></div>
 
-        <div>
-          <h1 className="font-light">(SERVICES)</h1>
-        </div>
+          {/* Services heading */}
+          <div className="md:col-span-1 flex flex-col">
+            <h1 className="lg:text-2xl font-light text-lg sm:text-xl md:text-2xl">(PROJECTS)</h1>
+          </div>
 
-        <div className="w-120 text-xl">
-          <p>
-            I specialize in building full-stack web applications that are
-            fast,reliable,and user-friendly.With a solid foundation in both
-            frontend and backend technologies,I help bring ideas to life whether
-            it's for a business, a startup,or a product team.
-          </p>
+          {/* Description */}
+          <div className="md:col-span-2 text-base sm:text-lg md:text-xl leading-relaxed">
+            <p>
+             Thoughtfully crafted digital experiences that blend utility and aesthetics into something functional, memorable, and refined.
+            </p>
+          </div>
         </div>
-      </div>
 
     </div>
 
@@ -89,7 +87,7 @@ export default function Projects({ direction = "vertical", data }) {
         {data && data.map((item, index) => (
           <div
             key={index}
-            className="stack-item absolute inset-0 flex items-center justify-center p-10"
+            className="stack-item absolute inset-0 flex items-center justify-center p-10 h-150 "
           >
             <div className="relative w-full h-full rounded-xl overflow-hidden border border-white/10 bg-black">
               {/* Content */}
@@ -113,7 +111,7 @@ export default function Projects({ direction = "vertical", data }) {
                 loop
                 playsInline
                 className="absolute inset-0 w-full h-full"
-              />
+              /> 
             </div>
           </div>
         ))}

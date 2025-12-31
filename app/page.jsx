@@ -30,9 +30,9 @@ export default function Home() {
         }
       ]} />
 
-      <Skill/>
-      <About/>
-      <Contact/>
+      <Skill />
+      <About />
+      <Contact />
       <Footer />
     </>
   );

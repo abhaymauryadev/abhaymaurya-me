@@ -48,7 +48,7 @@ export default function Contact() {
         
         {/* LEFT CONTENT */}
         <div className="space-y-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-neutral-100">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-neutral-100">
             Let’s build something meaningful together.
           </h2>
 
@@ -57,7 +57,7 @@ export default function Contact() {
               (Contact)
             </span>
 
-            <p>
+            <p className="font-medium">
               Have a project in mind, a question, or just want to say hello?
               I’m always open to discussing new ideas, collaborations, or
               opportunities.

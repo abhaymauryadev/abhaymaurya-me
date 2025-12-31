@@ -9,7 +9,7 @@ export default function About() {
         
         {/* LEFT IMAGE */}
         <div className="w-full">
-          <div className="relative w-full  h-225 rounded-2xl overflow-hidden">
+          <div className="relative w-full  h-120 lg:h-220 rounded-2xl overflow-hidden">
             <Image
               src="/videos/about.jpg"
               alt="About me image"
@@ -24,7 +24,7 @@ export default function About() {
         <div className="space-y-10">
           
           {/* Big statement */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-neutral-100">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-neutral-100">
             I'm a software engineer driven by a passion for turning ideas
             into clean, intuitive digital experiences.
           </h2>
@@ -36,7 +36,7 @@ export default function About() {
               (About Me)
             </span>
 
-            <div className="space-y-6">
+            <div className="space-y-6 font-medium">
               <p>
                 I am a passionate Software Engineer with a knack for building
                 full-stack web applications using modern technologies like
