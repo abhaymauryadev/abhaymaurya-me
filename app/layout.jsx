@@ -74,7 +74,7 @@ export const metadata = {
   },
 
   verification: {
-    google: "googlebb8dcfd303bf62ea.html", // 🔴 optional
+    google: "bb8dcfd303bf62ea", // 🔴 optional
   },
 };
 
