@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { Html } from "next/document";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -75,7 +76,7 @@ export const metadata = {
   },
 
   verification: {
-    google: "bb8dcfd303bf62ea",
+    google: "h6MzCoJdtdwQYfqGkqnK5K0Uvoqz-QGLcuLppfHgLfk",
   },
 };
 
