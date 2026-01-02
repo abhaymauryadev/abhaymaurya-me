@@ -83,11 +83,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        {/* Google Analytics */}
+        {/* Load GA script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ZSE6JSTQZ8"
           strategy="afterInteractive"
         />
+        {/* Inline GA config */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
