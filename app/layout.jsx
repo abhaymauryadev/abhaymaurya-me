@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google"; // 
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://abhaymaurya-me.vercel.app"), // 🔴 change to your real domain
+  metadataBase: new URL("https://abhaymaurya-me.vercel.app"), // change to your real domain
 
   title: {
     default: "Abhay Maurya | Full Stack Developer",
@@ -49,7 +49,7 @@ export const metadata = {
     siteName: "Abhay Maurya Portfolio",
     images: [
       {
-        url: "/about.jpg", // 🔴 add this image in /public
+        url: "/about.jpg", // add this image in /public
         width: 1200,
         height: 630,
         alt: "Abhay Maurya - Full Stack Developer",
@@ -64,7 +64,7 @@ export const metadata = {
     title: "Abhay Maurya | Full Stack Developer",
     description:
       "Self-taught Full Stack Developer working with MERN, Next.js, modern UI/UX design and DevOps Engineer.",
-    creator: "@theabhaywebdev", // 🔴 optional
+    creator: "@theabhaywebdev", // optional
     images: ["/about.jpg"],
   },
 
@@ -75,7 +75,7 @@ export const metadata = {
   },
 
   verification: {
-    google: "bb8dcfd303bf62ea", // 🔴 optional
+    google: "bb8dcfd303bf62ea", // optional
   },
 };
 
@@ -83,12 +83,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        {/* Load GA script */}
+        {/* Google Analytics external script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ZSE6JSTQZ8"
           strategy="afterInteractive"
         />
-        {/* Inline GA config */}
+
+        {/* Google Analytics inline config */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -103,4 +104,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
