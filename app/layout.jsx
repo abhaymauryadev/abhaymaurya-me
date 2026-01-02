@@ -1,4 +1,5 @@
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"; // 
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -83,14 +84,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSE6JSTQZ8"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZSE6JSTQZ8"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'G-ZSE6JSTQZ8');
-        </script>
+            gtag('config', 'G-ZSE6JSTQZ8');
+          `}
+        </Script>
         {children}
       </body>
     </html>
