@@ -26,7 +26,7 @@ export default function Works() {
             start: "top 80%",
             end: "bottom 20%",
             scrub: 1,
-            markers: true,
+            // markers: true,
           }
         }
       );
@@ -46,7 +46,7 @@ export default function Works() {
             start: "top 80%",
             end: "bottom 20%",
             scrub: 1,
-            markers: true,
+            // markers: true,
           }
         }
       );
@@ -66,7 +66,7 @@ export default function Works() {
             start: "top 70%",
             end: "bottom 20%",
             scrub: 1,
-            markers: true,
+            // markers: true,
           }
         }
       );

@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import LenisProvider from "@/components/LenisProvider";
 
 
 const inter = Inter({
@@ -99,8 +100,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-
-        {children}
+        {/* ✅ Lenis wrapper  */}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
       </body>
     </html>
   );

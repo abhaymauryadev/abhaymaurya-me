@@ -82,12 +82,12 @@ export default function Projects({ direction = "vertical", data }) {
     
     </section>
 
-    <section ref={sectionRef} className="relative h-[46rem] overflow-hidden">
-      <div className="absolute inset-0 flex">
+    <section ref={sectionRef} className=" relative h-[46rem] overflow-hidden">
+      <div className="absolute inset-0 flex ">
         {data && data.map((item, index) => (
           <div
             key={index}
-            className="stack-item absolute inset-0 flex items-center justify-center p-10 h-150 "
+            className="stack-item absolute inset-0 flex items-center justify-center lg:p-10 p-2 h-150 "
           >
             <div className="relative w-full h-[46rem] rounded-xl overflow-hidden border border-white/10 bg-black gap-12">
               {/* Content */}

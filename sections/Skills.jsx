@@ -289,65 +289,65 @@ export default function Skill() {
                   <span className="block transition-transform duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:-translate-y-6">
-                    DSA & Logical Thinking
+                    DSA 
                   </span>
 
                   <span className="absolute top-6 left-0 transition-all duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:top-0">
-                    DSA & Logical Thinking
+                    DSA 
                   </span>
                 </li>
                 <li className="group relative overflow-hidden h-6 cursor-pointer">
                   <span className="block transition-transform duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:-translate-y-6">
-                    Backend & Databases
+                    Backend 
                   </span>
 
                   <span className="absolute top-6 left-0 transition-all duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:top-0">
-                    Backend & Databases
+                    Backend 
                   </span>
                 </li>
                 <li className="group relative overflow-hidden h-6 cursor-pointer">
                   <span className="block transition-transform duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:-translate-y-6">
-                    Frontend & Web Systems
+                    Frontend
                   </span>
 
                   <span className="absolute top-6 left-0 transition-all duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:top-0">
-                    Frontend & Web Systems
+                    Frontend 
                   </span>
                 </li>
                 <li className="group relative overflow-hidden h-6 cursor-pointer">
                   <span className="block transition-transform duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:-translate-y-6">
-                    Operating Systems
+                    OS
                   </span>
 
                   <span className="absolute top-6 left-0 transition-all duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:top-0">
-                    Operating Systems
+                    OS
                   </span>
                 </li>
-                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                <li className="group relative overflow-hidden h-6  cursor-pointer">
                   <span className="block transition-transform duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:-translate-y-6">
-                    Software Architecture Basics
+                    Software Architect
                   </span>
 
                   <span className="absolute top-6 left-0 transition-all duration-[1s]
                    ease-[cubic-bezier(0.19,1,0.22,1)]
                    group-hover:top-0">
-                    Software Architecture Basics
+                    Software Architect
                   </span>
                 </li>
               </ul>
