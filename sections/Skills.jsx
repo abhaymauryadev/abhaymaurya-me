@@ -33,16 +33,123 @@ export default function Skill() {
                 Languages & Tools
               </h3>
               <ul className="space-y-1 sm:space-y-2">
-                <li>Python</li>
-                <li>SQL</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>TypeScript</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>Postman</li>
-                <li>Docker</li>
-                <li>Firebase</li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Python
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Python
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    SQL
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    SQL
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    C++
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    C++
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    TypeScript
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    TypeScript
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    JavaScript
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    JavaScript
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Git
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Git
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Postman
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Postman
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Docker
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Docker
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Firebase
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Firebase
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -52,29 +159,197 @@ export default function Skill() {
                 Frameworks & Libraries
               </h3>
               <ul className="space-y-1 sm:space-y-2">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Flask</li>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-                <li>Tailwind CSS</li>
-                <li>Framer Motion</li>
-                <li>GSAP</li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    React
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    React
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Node.js
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Node.js
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Express.js
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Express.js
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Flask
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Flask
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Bootstrap
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Bootstrap
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Next.js
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Next.js
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Tailwind CSS
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Tailwind CSS
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Framer Motion
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Framer Motion
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    GSAP
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    GSAP
+                  </span>
+                </li>
               </ul>
             </div>
 
             {/* Column 3 */}
             <div className="pointer-cursor">
               <h3 className="text-neutral-200 font-medium mb-4 text-base sm:text-lg">
-                Core CS Concepts
+                IT & Software Foundations
               </h3>
               <ul className="space-y-1 sm:space-y-2">
-                <li>DSA</li>
-                <li>DBMS</li>
-                <li>OOP</li>
-                <li>Operating Systems</li>
-                <li>System Design</li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    DSA & Logical Thinking
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    DSA & Logical Thinking
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Backend & Databases
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Backend & Databases
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Frontend & Web Systems
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Frontend & Web Systems
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Operating Systems
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Operating Systems
+                  </span>
+                </li>
+                <li className="group relative overflow-hidden h-6 cursor-pointer">
+                  <span className="block transition-transform duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:-translate-y-6">
+                    Software Architecture Basics
+                  </span>
+
+                  <span className="absolute top-6 left-0 transition-all duration-[1s]
+                   ease-[cubic-bezier(0.19,1,0.22,1)]
+                   group-hover:top-0">
+                    Software Architecture Basics
+                  </span>
+                </li>
               </ul>
             </div>
           </div>

@@ -72,7 +72,8 @@ export default function Footer() {
           </span>
 
           <span>
-            Built with Next.js & Tailwind CSS
+            Code.Build.Win. 🚀
+            Every line code is a step forward.
           </span>
         </div>
       </div>

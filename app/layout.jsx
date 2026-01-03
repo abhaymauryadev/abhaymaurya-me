@@ -50,7 +50,7 @@ export const metadata = {
     siteName: "Abhay Maurya Portfolio",
     images: [
       {
-        url: "/about.jpg",
+        url: "/hero.png",
         width: 1200,
         height: 630,
         alt: "Abhay Maurya - Full Stack Developer",
@@ -66,17 +66,17 @@ export const metadata = {
     description:
       "Self-taught Full Stack Developer working with MERN, Next.js, modern UI/UX design and DevOps Engineer.",
     creator: "@theabhaywebdev",
-    images: ["/about.jpg"],
+    images: ["/hero.png"],
   },
 
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    shortcut: "/favicon-96x96.png",
     apple: "/apple-touch-icon.png",
   },
 
   verification: {
-    google: "h6MzCoJdtdwQYfqGkqnK5K0Uvoqz-QGLcuLppfHgLfk",
+    google: "h6MzCoJdtdwQYfqGkqnK5K0Uvoqz-QGLcuLppfHgLfk", // Google Search Console Verification
   },
 };
 

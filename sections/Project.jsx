@@ -56,8 +56,8 @@ export default function Projects({ direction = "vertical", data }) {
     <>
     <section className='min-h-screen max-w-9xl mx-auto '>
      <div className="min-h-screen max-w-9xl mx-auto">
-      <div className=" max-w-7xl  mx-auto mt-24 ">
-        <h1 className="lg:text-8xl text-6xl font-bold tracking-tighter">SELECTED WORKS /</h1>
+     <div className="lg:max-w-7xl max-w-[26rem] mx-auto mt-24 ">
+          <h1 className="text-[3.5rem] sm:text-[5rem] lg:text-[6.5rem] font-extrabold tracking-tight uppercase  ">selected works/</h1>
       </div>
 
      <div className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-6 gap-6 px-4">
@@ -66,7 +66,7 @@ export default function Projects({ direction = "vertical", data }) {
 
           {/* Services heading */}
           <div className="md:col-span-1 flex flex-col">
-            <h1 className="lg:text-2xl font-light text-lg sm:text-xl md:text-2xl">(PROJECTS)</h1>
+            <h1 className="font-light text-lg sm:text-xl md:text-2xl">(PROJECTS)</h1>
           </div>
 
           {/* Description */}
@@ -82,14 +82,14 @@ export default function Projects({ direction = "vertical", data }) {
     
     </section>
 
-    <section ref={sectionRef} className="relative h-screen overflow-hidden">
+    <section ref={sectionRef} className="relative h-[46rem] overflow-hidden">
       <div className="absolute inset-0 flex">
         {data && data.map((item, index) => (
           <div
             key={index}
             className="stack-item absolute inset-0 flex items-center justify-center p-10 h-150 "
           >
-            <div className="relative w-full h-full rounded-xl overflow-hidden border border-white/10 bg-black">
+            <div className="relative w-full h-[46rem] rounded-xl overflow-hidden border border-white/10 bg-black gap-12">
               {/* Content */}
               <div className="absolute z-10 top-8 left-8 max-w-md">
                 <h2 className="text-4xl font-bold opacity-80">
