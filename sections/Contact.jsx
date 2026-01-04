@@ -1,6 +1,7 @@
 "use client";
 
 import {useState} from "react";
+import toast from 'react-hot-toast';
 
 
 export default function Contact() { 
@@ -13,7 +14,6 @@ export default function Contact() {
   console.log(form.message);
 
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -22,7 +22,6 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus("");
 
     try {
       const res = await fetch("/api/contact", {
@@ -33,10 +32,10 @@ export default function Contact() {
 
       if (!res.ok) throw new Error();
 
-      setStatus("Message sent successfully.");
+      toast.success("Message sent successfully.");
       setForm({ name: "", email: "", message: "" });
     } catch {
-      setStatus("Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -79,6 +78,7 @@ export default function Contact() {
               onChange={handleChange}
               name="name"
               placeholder="Your name"
+              required
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors"
             />
           </div>
@@ -94,6 +94,7 @@ export default function Contact() {
               onChange={handleChange}
               name="email"
               placeholder="you@example.com"
+              required
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors"
             />
           </div>
@@ -109,6 +110,7 @@ export default function Contact() {
               onChange={handleChange}
               name="message"
               placeholder="Tell me about your idea..."
+              required
               className="w-full bg-transparent border-b border-neutral-700 py-3 text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-neutral-300 transition-colors resize-none"
             />
              

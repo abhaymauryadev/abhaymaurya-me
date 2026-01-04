@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
+import { Toaster } from 'react-hot-toast';
 
 
 const inter = Inter({
@@ -28,6 +29,11 @@ export const metadata = {
     "React Developer",
     "UI UX Designer",
     "Web Developer India",
+    "MERN Stack Developer",
+    "Next.js Full Stack Developer",
+    "Next.js Full Backend",
+    "UI UX Modern Designer",
+    "ALL Rounder Developer",
   ],
 
   authors: [{ name: "Abhay Maurya" }],
@@ -104,6 +110,7 @@ export default function RootLayout({ children }) {
         <LenisProvider>
           {children}
         </LenisProvider>
+        <Toaster />
       </body>
     </html>
   );

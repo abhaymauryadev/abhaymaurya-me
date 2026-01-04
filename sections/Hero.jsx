@@ -16,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center">
+    <section className="relative w-full min-h-screen flex items-center ">
       {/* Background Layer */}
       <div className="absolute inset-0">
         <ColorBends />
