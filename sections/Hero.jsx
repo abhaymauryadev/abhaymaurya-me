@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Content Layer */}
       <div
         id="home"
-        className="relative z-50 flex flex-col items-start justify-center text-left px-4 sm:px-8 md:px-16 max-w-screen-xl"
+        className="relative z-50 flex flex-col items-start justify-center text-left px-4 sm:px-8 md:px-16 max-w-7xl"
       >
         {/* Badge */}
         <h1 className="text-[9px] sm:text-sm md:text-base font-bold text-white px-6 py-2 rounded-full bg-white/10 backdrop-blur-md">
@@ -39,7 +39,7 @@ export default function Hero() {
           </h1>
 
           {/* Animated Role */}
-          <div className="overflow-hidden h-[2.2em] sm:h-[2.4em] md:h-[4.6em] lg:h-[8rem] mt-2">
+          <div className="overflow-hidden h-[2.2em] sm:h-[2.4em] md:h-[4.6em] lg:h-32 mt-2">
             <AnimatePresence mode="wait">
               <motion.span
                 key={roles[index]}
