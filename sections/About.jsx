@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-   <section id="about" className="min-h-screen  text-neutral-200 px-6 md:px-16 py-28">
+   <section id="about" className="min-h-screen bg-[#0a0a0a] text-neutral-200 px-6 md:px-16 py-28">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         
         {/* LEFT IMAGE */}

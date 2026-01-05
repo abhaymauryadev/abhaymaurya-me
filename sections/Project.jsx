@@ -54,9 +54,9 @@ export default function Projects({ direction = "vertical", data }) {
 
   return (
     <>
-    <section className='min-h-screen max-w-9xl mx-auto '>
+    <section className='min-h-screen max-w-9xl mx-auto bg-[#0a0a0a] text-white'>
      <div className="min-h-screen max-w-9xl mx-auto">
-     <div className="lg:max-w-7xl max-w-[26rem] mx-auto mt-24 ">
+     <div className="lg:max-w-7xl max-w-104 mx-auto mt-24 ">
           <h1 className="text-[3.5rem] sm:text-[5rem] lg:text-[6.5rem] font-extrabold tracking-tight uppercase  ">selected works/</h1>
       </div>
 
@@ -82,14 +82,14 @@ export default function Projects({ direction = "vertical", data }) {
     
     </section>
 
-    <section ref={sectionRef} className=" relative h-[46rem] overflow-hidden">
+    <section ref={sectionRef} className=" relative h-184 overflow-hidden bg-[#0a0a0a] text-white">
       <div className="absolute inset-0 flex ">
         {data && data.map((item, index) => (
           <div
             key={index}
-            className="stack-item absolute inset-0 flex items-center justify-center lg:p-10 p-2 h-150 "
+            className="stack-item absolute inset-0 flex items-center justify-center lg:p-10  h-150 "
           >
-            <div className="relative w-full h-[46rem] rounded-xl overflow-hidden border border-white/10 bg-black gap-12">
+            <div className="relative lg:w-full w-200 h-180 lg:h-184 rounded-xl overflow-hidden border border-white/30 bg-black gap-12 mt-36">
               {/* Content */}
               <div className="absolute z-10 top-8 left-8 max-w-md">
                 <h2 className="text-4xl font-bold opacity-80">
@@ -110,7 +110,7 @@ export default function Projects({ direction = "vertical", data }) {
                 muted
                 loop
                 playsInline
-                className="absolute inset-0 w-full h-full"
+                className="absolute inset-0 w-full h-full object-cover bg-[#0a0a0a] "
               /> 
             </div>
           </div>

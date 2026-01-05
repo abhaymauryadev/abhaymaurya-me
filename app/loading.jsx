@@ -39,23 +39,16 @@ export default function Loading() {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black"
+          className="fixed inset-0 z-9999 flex items-center justify-center bg-[#0a0a0a]"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.1 }}
         >
-          <div className="overflow-hidden h-[18rem]">
+          <div className="overflow-hidden h-72 flex justify-center items-center">
             <AnimatePresence mode="wait">
               <motion.span
-                key={greetings[index]}
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -40, opacity: 0 }}
-                transition={{
-                  duration: 0.5,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="block text-5xl md:text-8xl font-bold text-white"
+               
+                className="block text-5xl md:text-8xl font-bold text-white "
               >
                 {greetings[index]}
               </motion.span>

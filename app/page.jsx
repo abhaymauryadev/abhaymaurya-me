@@ -19,7 +19,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Works />
-      <Projects data={[
+     
+      <Projects  direction="vertical"  data={[
         {
           title: "E-Commerce Platform",
           desc: "A full-stack e-commerce solution built with Next.js, featuring user authentication, payment integration, and real-time inventory management.",
@@ -31,6 +32,7 @@ export default function Home() {
           video: "/videos/taskapp-demo.mp4"
         }
       ]} />
+     
 
       <Skill />
       <About />

@@ -32,7 +32,7 @@ export default function Contact() {
 
       if (!res.ok) throw new Error();
 
-      toast.success("Message sent successfully.");
+      toast.success("Email sent successfully.");
       setForm({ name: "", email: "", message: "" });
     } catch {
       toast.error("Something went wrong. Please try again.");
@@ -47,7 +47,7 @@ export default function Contact() {
         
         {/* LEFT CONTENT */}
         <div className="space-y-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-neutral-100">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl w-[20rem] lg:w-full font-bold leading-tight text-neutral-100">
             Let’s build something meaningful together.
           </h2>
 

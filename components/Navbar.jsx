@@ -37,9 +37,9 @@ export default function Navbar() {
     );
   }, [])
   return (
-    <section ref={Dock} className="fixed lg:fixed bottom-2 md:bottom-16 left-1/2 transform -translate-x-1/2 flex justify-between items-center  md:w-auto lg:max-w-225 gap-4 md:gap-20 m-auto px-7 md:px-4 py-4 rounded-2xl bg-[black]/30 z-30 text-[12px] md:text-[13px] leading-5 backdrop-blur-md shadow-lg">
+    <section ref={Dock} className="  fixed lg:fixed bottom-2 md:bottom-16 left-1/2 transform -translate-x-1/2 flex justify-between items-center  md:w-auto lg:max-w-225 gap-4 md:gap-20 m-auto px-7 md:px-4 py-4 rounded-2xl bg-[black]/30 z-30 text-[12px] md:text-[13px] leading-5 backdrop-blur-md shadow-lg">
 
-      <div className="flex items-center gap-2 md:gap-4 list-none  text-[#F8FAF] lg:text-lg md:text-[13px] font-inter font-bold">
+      <div className="flex items-center gap-2 md:gap-4 list-none  text-white lg:text-lg md:text-[13px] font-inter font-bold">
 
         <a href="#home" onClick={() => handleScroll("#home")} className='group cursor-pointer relative overflow-hidden '>
           <div className=" group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
