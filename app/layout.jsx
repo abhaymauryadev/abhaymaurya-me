@@ -2,8 +2,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
-import { Toaster } from 'react-hot-toast';
-
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -46,10 +45,24 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+    maxImagePreview: "large",
+    maxSnippet: -1,
+    maxVideoPreview: -1,
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
+      noimageindex: true,
+      maxImagePreview: "large",
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+    bingBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      maxImagePreview: "large",
+      maxSnippet: -1,
+      maxVideoPreview: -1,
     },
   },
 
@@ -81,7 +94,20 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      {
+        url: "/web-app-manifest-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/web-app-manifest-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
     shortcut: "/favicon-96x96.png",
     apple: "/apple-touch-icon.png",
   },
@@ -111,9 +137,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* ✅ Lenis wrapper  */}
-        <LenisProvider>
-          {children}
-        </LenisProvider>
+        <LenisProvider>{children}</LenisProvider>
         <Toaster />
       </body>
     </html>
