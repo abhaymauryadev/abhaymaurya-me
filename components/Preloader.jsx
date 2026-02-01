@@ -3,7 +3,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Loading() {
+// Track if preloader has been shown in this session
+let hasShownPreloader = false;
+
+export default function Preloader() {
   const greetings = [
     "Hello",
     "नमस्ते",
@@ -16,10 +19,20 @@ export default function Loading() {
   ];
 
   const [index, setIndex] = useState(0);
-  const [show, setShow] = useState(true);
+  // Only show if it hasn't been shown yet
+  const [show, setShow] = useState(!hasShownPreloader);
 
   // Rotate greetings
   useEffect(() => {
+    // If already shown, ensure state is false and return
+    if (hasShownPreloader) {
+      setShow(false);
+      return;
+    }
+
+    // Mark as shown for next time
+    hasShownPreloader = true;
+
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % greetings.length);
     }, 700);
@@ -47,7 +60,7 @@ export default function Loading() {
           <div className="overflow-hidden h-72 flex justify-center items-center">
             <AnimatePresence mode="wait">
               <motion.span
-               
+
                 className="block text-5xl md:text-8xl font-bold text-white "
               >
                 {greetings[index]}

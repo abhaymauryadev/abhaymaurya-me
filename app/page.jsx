@@ -10,17 +10,17 @@ import Projects from "@/sections/Project";
 import Skill from "@/sections/Skills";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
-import Loading from "@/app/loading";
+import Preloader from "@/components/Preloader";
 
 export default function Home() {
   return (
     <>
-      <Loading />
+      <Preloader />
       <Navbar />
       <Hero />
       <Works />
-     
-      <Projects  direction="vertical"  data={[
+
+      <Projects direction="vertical" data={[
         {
           title: "Smart Service Market place",
           desc: "A Full Stack Project where you can Book trusted local services like AC repair, plumbing, cleaning, and electrical work online in India..",
@@ -32,7 +32,7 @@ export default function Home() {
           video: "/videos/taskapp-demo.mp4"
         }
       ]} />
-     
+
 
       <Skill />
       <About />
