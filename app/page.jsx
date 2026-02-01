@@ -22,9 +22,9 @@ export default function Home() {
      
       <Projects  direction="vertical"  data={[
         {
-          title: "E-Commerce Platform",
-          desc: "A full-stack e-commerce solution built with Next.js, featuring user authentication, payment integration, and real-time inventory management.",
-          video: "/videos/ecommerce-demo.mp4"
+          title: "Smart Service Market place",
+          desc: "A Full Stack Project where you can Book trusted local services like AC repair, plumbing, cleaning, and electrical work online in India..",
+          video: "/videos/SmartServicePlace-demo.mp4"
         },
         {
           title: "Task Management App",

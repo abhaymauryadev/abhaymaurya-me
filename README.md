@@ -56,7 +56,7 @@ cd personal-portfolio
 2. Install dependencies:
 ```bash
 npm install
-
+```
 
 3. Run the development server:
 ```bash
@@ -73,8 +73,18 @@ To enable the contact form, configure your email settings in `app/api/contact/ro
 ```javascript
 // Update with your email service details
 const transporter = nodemailer.createTransporter({
-  // Your SMTP configuration
+  service: 'gmail', // or your email provider
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
 });
+```
+
+Set the following environment variables in your `.env.local`:
+```
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASSWORD=your-app-password
 ```
 
 ## 🎨 Customization
@@ -83,44 +93,46 @@ const transporter = nodemailer.createTransporter({
 - Update name, bio, and contact details in the respective sections
 - Replace placeholder projects in `app/page.jsx`
 - Modify skills in `sections/Skills.jsx`
+- Update social links in `components/Footer.jsx`
 
 ### Styling
 - Colors and themes can be adjusted in `app/globals.css`
+- Tailwind CSS is configured in `tailwind.config.js`
 - Tailwind classes are used throughout for easy customization
 
 ### Assets
 - Replace images in `public/` directory
-- Update videos in `public/videos/`
+- Add demo videos in `public/videos/` (see [public/videos/README.md](public/videos/README.md))
 - Modify icons and favicons as needed
 
 ## 📱 PWA Features
 
 The site includes PWA capabilities:
 - Web app manifest in `public/site.webmanifest`
+- Installable on mobile and desktop devices
 - Service worker ready (can be added for offline functionality)
-- Installable on mobile devices
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
-1. Push to GitHub
-2. Connect to Vercel
-3. Deploy automatically
+1. Push your repository to GitHub
+2. Import your project in [Vercel Dashboard](https://vercel.com)
+3. Vercel automatically detects Next.js and deploys
+4. Set environment variables in project settings
 
 ### Other Platforms
-The app can be deployed to any platform supporting Next.js:
-- Netlify
-- Railway
-- Self-hosted
+- **Netlify**: Build command: `npm run build`, Publish directory: `.next`
+- **Docker**: Create a Dockerfile for containerized deployment
+- **Self-hosted**: Use `npm run build` then `npm start`
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ## 🤝 Contributing
 
-Feel free to fork and customize for your own portfolio!
+Feel free to fork this project and submit pull requests for any improvements.
 
----
+## 📧 Contact
 
-Built with ❤️ by Abhay
+For questions or inquiries, please use the contact form on the portfolio website or reach out directly.
