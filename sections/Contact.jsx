@@ -46,23 +46,47 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         
         {/* LEFT CONTENT */}
-        <div className="space-y-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl w-[20rem] lg:w-full font-bold leading-tight text-neutral-100">
-            Let’s build something meaningful together.
-          </h2>
+        <div className="space-y-8 sm:space-y-10 lg:space-y-12">
+  {/* Heading */}
+  <h2
+    className="
+      font-bold leading-tight text-neutral-100
+      text-2xl
+      sm:text-3xl
+      md:text-4xl
+      lg:text-5xl
+      max-w-[22rem]
+      sm:max-w-[28rem]
+      lg:max-w-none
+    "
+  >
+    Let’s build something meaningful together.
+  </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8 text-neutral-400 text-sm leading-relaxed">
-            <span className="uppercase tracking-widest text-neutral-500">
-              (Contact)
-            </span>
+  {/* Content */}
+  <div
+    className="
+      grid
+      grid-cols-1
+      md:grid-cols-[160px_1fr]
+      gap-6 sm:gap-8
+      text-neutral-400
+      text-sm sm:text-base
+      leading-relaxed
+    "
+  >
+    <span className="uppercase tracking-widest text-neutral-500">
+      (Contact)
+    </span>
 
-            <p className="font-medium">
-              Have a project in mind, a question, or just want to say hello?
-              I’m always open to discussing new ideas, collaborations, or
-              opportunities.
-            </p>
-          </div>
-        </div>
+    <p className="font-medium max-w-prose">
+      Have a project in mind, a question, or just want to say hello?
+      I’m always open to discussing new ideas, collaborations, or
+      opportunities.
+    </p>
+  </div>
+</div>
+
 
         {/* RIGHT FORM */}
         <form onSubmit={handleSubmit} className="space-y-8">

@@ -56,29 +56,73 @@ export default function Projects({ direction = "vertical", data }) {
   return (
     <>
       <section className='min-h-screen max-w-9xl mx-auto bg-[#0a0a0a] text-white'>
-        <div className="min-h-screen max-w-9xl mx-auto">
-          <div className="lg:max-w-7xl max-w-104 mx-auto mt-24 ">
-            <h1 className="text-[3.5rem] sm:text-[5rem] lg:text-[6.5rem] font-extrabold tracking-tight uppercase  ">selected works/</h1>
-          </div>
+        <div className="min-h-screen max-w-9xl mx-auto text-white">
+  {/* Section Title */}
+  <div className="max-w-7xl mx-auto mt-16 sm:mt-20 lg:mt-28 px-4 sm:px-6">
+    <h1
+      className="
+        font-extrabold tracking-tight uppercase
+        text-3xl
+        sm:text-4xl
+        md:text-5xl
+        lg:text-6xl
+        xl:text-[6.5rem]
+      "
+    >
+      Selected Works /
+    </h1>
+  </div>
 
-          <div className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-6 gap-6 px-4">
-            {/* Left side spacing (hidden on mobile, visible on desktop) */}
-            <div className="hidden md:block md:col-span-3"></div>
+  {/* Content Grid */}
+  <div
+    className="
+      max-w-7xl
+      mx-auto
+      mt-12 sm:mt-16 lg:mt-24
+      px-4 sm:px-6
+      grid
+      grid-cols-1
+      md:grid-cols-6
+      gap-8
+    "
+  >
+    {/* Spacer (desktop only) */}
+    <div className="hidden md:block md:col-span-2"></div>
 
-            {/* Services heading */}
-            <div className="md:col-span-1 flex flex-col">
-              <h1 className="font-light text-lg sm:text-xl md:text-2xl">(PROJECTS)</h1>
-            </div>
+    {/* Projects label */}
+    <div className="md:col-span-1 flex items-start">
+      <h2
+        className="
+          font-light
+          uppercase
+          tracking-wide
+          text-sm
+          sm:text-base
+          md:text-lg
+        "
+      >
+        (Projects)
+      </h2>
+    </div>
 
-            {/* Description */}
-            <div className="md:col-span-2 text-base sm:text-lg md:text-xl leading-relaxed">
-              <p>
-                Thoughtfully crafted digital experiences that blend utility and aesthetics into something functional, memorable, and refined.
-              </p>
-            </div>
-          </div>
+    {/* Description */}
+    <div className="md:col-span-3">
+      <p
+        className="
+          text-base
+          sm:text-lg
+          md:text-xl
+          leading-relaxed
+          max-w-prose
+        "
+      >
+        Thoughtfully crafted digital experiences that blend utility and
+        aesthetics into something functional, memorable, and refined.
+      </p>
+    </div>
+  </div>
+</div>
 
-        </div>
 
 
       </section>
