@@ -55,8 +55,8 @@ export default function Contact() {
       sm:text-3xl
       md:text-4xl
       lg:text-5xl
-      max-w-[22rem]
-      sm:max-w-[28rem]
+      max-w-88
+      sm:max-w-md
       lg:max-w-none
     "
   >

@@ -76,15 +76,16 @@ const transporter = nodemailer.createTransporter({
   service: 'gmail', // or your email provider
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
+    pass: process.env.EMAIL_PASS,
   },
 });
 ```
 
 Set the following environment variables in your `.env.local`:
 ```
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASSWORD=your-app-password
+EMAIL_USER=
+EMAIL_PASS=
+EMAIL_TO=
 ```
 
 ## 🎨 Customization
